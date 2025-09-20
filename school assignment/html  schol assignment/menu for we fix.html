@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Always Burger Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 0.5rem 1rem;
+      color: white;
+      position: relative;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    /* Burger icon */
+    .burger {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px;
+      transition: 0.3s;
+    }
+
+    /* Menu links (hidden by default) */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: #333;
+      width: 200px;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      padding: 0.5rem 0;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: orange;
+    }
+
+    /* Active menu (visible) */
+    .nav-links.active {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1><img src="improvedlogo.pngx" style="width: 100px; height: 90px;">You fix </h1>
+    <div class="burger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="home page .html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+</body>
+<p>&copy; Copyright Bruce 2025</p>  
+</html>
