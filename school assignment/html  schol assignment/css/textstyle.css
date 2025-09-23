@@ -1,10 +1,17 @@
-.body{
-    background-color: #f2f2f2;
+.textstyle{
+  color: rgb(245, 243, 239);
 }
 h1{
-  color: blanchedalmond;
+  color: rgb(253, 252, 249);
+}
+h2{
+  color: rgb(240, 239, 238);
+}
+h3{
+  color: rgb(255, 253, 250);
 }
 p{
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
+    color: rgb(250, 246, 239);
 }

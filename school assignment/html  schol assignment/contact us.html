@@ -1,55 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home page</title>
-
-  <!-- CSS files -->
-   <link rel="stylesheet" href="css/textstyle.css">
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="css/background-image.css" class="bg-image">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — You Fix</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/textstyle.css">
+    <link rel="stylesheet" href="css/picture.css">
+    <link rel="stylesheet" href="css/formsss.css">
 </head>
-  <!-- Navigation -->
+<body class="bg-black">
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home page</a></li>
-        <li><a href="home-page.html">About us</a></li>
-        <li><a href="membership.html">Membership</a></li>
-        <li><a href="contact-us.html">My contact</a></li>
-      </ul>
-    </nav>
+    <ul>
+      <li><a href="index.html2.html">home page</a></li>
+      <li><a href="home-page .html">about us</a></li>
+      <li><a href="membership.html">membership</a></li>
+      <li><a href="contact us.html">my contact</a></li>
+    </ul>
   </header>
+  <img src="images/improvedlogo.png" 
+  srcset="images/improvedlogo.png"
+  sizes="(max-width: 600px) 100vw, 600px"
+  alt="logo" width="200" height="100">
+<div class="container">
+  <main>
+    <h1 class="textstyle">Contact Us</h1>
 
-  <hr>
+    <form method="post" action="thankyou.html" class="formss">
+      <label for="name" class="textstyle">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="e.g. Rea" required><p class="textstyle"><br><br>
 
-  <!-- Intro -->
-  <p>If you have any questions or queries, please feel free to contact us</p>
+      <label for="email" class="textstyle">Email address:</label><br>
+      <input type="email" id="email" name="email" placeholder="e.g. rea34@gmail.com" required><p class="textstyle"><br><br>
 
-  <!-- Logo as background -->
-<body style="background-image: url('images/improvedlogo.png'); background-size: cover;"></body>
-  <!-- Contact form -->
-  <h1>Contact us</h1>
-  <form class="forms" method="post" action="thankyou.html">
-    <label for="name">First name:</label>
-    <input type="text" id="name" name="name" placeholder="e.g Rea" required><br><br>
+      <label for="tel" class="textstyle">phone number:</label><br>
+      <input type="tel" id="tel" name="phone" placeholder="0123456789" maxlength="10"><p class="textstyle"><br><br>
 
-    <label for="email">Email address:</label>
-    <input type="email" id="email" name="email" placeholder="e.g rea34@gmail.com" required><br><br>
+      <label for="message" class="textstyle">Message:</label><br>
+      <textarea id="message" name="message" placeholder="Type your message here..." required></textarea><br><br>
 
-    <label for="tel">Tel number:</label>
-    <!-- Floating WhatsApp Button -->
-<a href="https://wa.me/27670238440" class="whatsapp-float" target="_blank">
-  <img src="images/whatsapp-icon.png" alt="WhatsApp" width="60" height="60">
-</a>
-
-
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" cols="40" placeholder="Type your message here..."></textarea><br><br>
-
-    <button type="submit">Submit</button>
-  </form>
-
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  </div>
+  <footer>
+    <p class="textstyle">&copy; 2025 We Fix. All rights reserved.</p>
 </body>
-</html>
+</html
