@@ -1,0 +1,15 @@
+img {
+  max-width: 100%;
+  height: auto;
+  float: right;
+  background-image: url("images/improvedlogo.png")
+  pos
+
+}
+.bg-black {
+  background-color: black;
+    @media screen and (max-width: 600px) {  
+        background-position: top; /*adjust position for small screens */ 
+    }
+
+}

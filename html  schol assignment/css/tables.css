@@ -1,0 +1,32 @@
+/* Make table text visible on pages using body.class="bg-black" */
+table, th,td {
+    border:1px solid rgb(250, 248, 248);
+    border-collapse: collapse;
+    padding: 8px;
+    color: white; /* table text color */
+}
+body.bg-black table th,
+body.bg-black table td {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #444;
+    vertical-align: top;
+    color: white; /* table text color */
+  background: rgba(255,255,255,0.03); /* subtle cell background for contrast */
+}
+body.bg-black table th {
+  background: rgba(255,255,255,0.06); /* header contrast */
+  font-weight: 600;
+  text-align: left;
+}
+/* optional: improve list inside cells */
+body.bg-black table td li {
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+body.bg-black table td li:last-child {
+  margin-bottom: 0; /* remove margin from last list item */
+    @media screen and (max-width: 600px) {  
+        background-position: top; /*adjust position for small screens */ 
+    }
+
+}

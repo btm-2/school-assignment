@@ -1,0 +1,13 @@
+
+.bg-image{
+    background-image: url("../images/grill.png"); /*path to the image*/
+    background-size: cover;/*cover the entire screen*/
+    background-position: center;/*keep it centered*/
+    background-repeat: no-repeat;/*prevent tiling */
+    min-height: 100vh;/*full screen height */
+    margin: 0%; /*remove unwanted space */
+    background-attachment: fixed;
+    @media screen and (max-width: 600px) {
+        background-position: top; /*adjust position for small screens */ 
+    }
+}

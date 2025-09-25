@@ -1,0 +1,85 @@
+body {
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #fff;
+    /* remove display:flex; center the container instead */
+}
+
+.container{
+    /* rounded card with subtle gradient */
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    margin: 40px auto;
+    box-sizing: border-box;
+
+    /* drop shadow + soft inner shine */
+    box-shadow:
+      0 10px 30px rgba(255, 253, 253, 0.918),
+      0 2px 6px rgba(240, 237, 237, 0.911),
+      inset 0 1px 0 rgba(252, 246, 246, 0.932);
+
+    /* subtle border to separate from black bg */
+    border: 1px solid rgba(255,255,255,0.06);
+
+    /* optional glass blur (supported browsers) */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+/* hover/lift effect */
+.container:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      0 18px 50px rgba(0,0,0,0.7),
+      0 6px 12px rgba(0,0,0,0.4),
+      inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+/* optional: make inputs sit nicely inside the box */
+.container input,
+.container textarea,
+.container select {
+    background: #0d0d0d;
+    border: 1px solid rgba(255,255,255,0.08);
+    color: #fff;
+}
+
+/* style the actual h1 element (not a .h1 class) */
+h1 {
+    text-align: center;
+    color: white;
+}
+
+/* combined label rules */
+.label{
+    display: block;
+    margin: 10px 0 6px;
+    color: white;
+    font-weight: bold;
+}
+
+/* basic input/textarea/button styles for readability on dark bg */
+input, textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 12px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background: #111;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 16px;
+    background: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
