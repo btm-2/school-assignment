@@ -18,12 +18,12 @@ body {
 
     /* drop shadow + soft inner shine */
     box-shadow:
-      0 10px 30px rgba(17, 0, 0, 0.918),
-      0 2px 6px rgba(12, 0, 0, 0.911),
-      inset 0 1px 0 rgba(19, 0, 0, 0.932);
+      0 10px 30px rgba(255, 253, 253, 0.918),
+      0 2px 6px rgba(240, 237, 237, 0.911),
+      inset 0 1px 0 rgba(252, 246, 246, 0.932);
 
     /* subtle border to separate from black bg */
-    border: 1px solid rgba(14, 223, 238, 0.06);
+    border: 1px solid rgba(255,255,255,0.06);
 
     /* optional glass blur (supported browsers) */
     backdrop-filter: blur(6px);
@@ -35,9 +35,9 @@ body {
 .container:hover {
     transform: translateY(-6px);
     box-shadow:
-      0 18px 50px rgba(231, 4, 99, 0.7),
-      0 6px 12px rgba(231, 4, 99, 0.7),
-      inset 0 1px 0 rgba(231, 4, 99, 0.7),
+      0 18px 50px rgba(0,0,0,0.7),
+      0 6px 12px rgba(0,0,0,0.4),
+      inset 0 1px 0 rgba(255,255,255,0.04);
 }
 
 /* optional: make inputs sit nicely inside the box */
@@ -46,7 +46,7 @@ body {
 .container select {
     background: #0d0d0d;
     border: 1px solid rgba(255,255,255,0.08);
-    color: #faf6f6;
+    color: #fff;
 }
 
 /* style the actual h1 element (not a .h1 class) */
@@ -75,11 +75,19 @@ input, textarea {
     box-sizing: border-box;
 }
 
+
 button {
-    padding: 10px 16px;
-    background: #1e90ff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+    color: var(--bg, #fff);
+    font-weight: 600;
+    background-image: linear-gradient(315deg, #000 0%, #111 100%);
+    padding: 0.8rem 1.5em;
+    position: relative;
+    isolation: isolate;
+    box-shadow:
+      2px 3px 1px rgba(0,0,0,0.6),
+      inset 0 -10px 20px -10px rgba(0,0,0,0.25);
+    border-radius: 0.66em;
+    transform: scale(1);
+    transition: all var(--spring-duration, 200ms) var(--spring-easing, ease);
     cursor: pointer;
 }

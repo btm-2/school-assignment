@@ -1,26 +1,15 @@
-
 img {
   max-width: 100%;
   height: auto;
   float: right;
-  /* If you meant to use a background on an element instead of the <img> src, use a different selector (e.g., .logo) */
-  /* background-image: url("../images/improvedlogo.png"); */
-}
+  background-image: url("images/improvedlogo.png")
+  pos
 
-.bg-image {
-    background-image: url('../images/workshop.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-attachment: fixed;
-    overflow-x: hidden;
 }
-
-@media screen and (max-width: 600px) {
-    .bg-image {
-        background-position: top; /* adjust position for small screens */
+.bg-black {
+  background-color: black;
+    @media screen and (max-width: 600px) {  
+        background-position: top; /*adjust position for small screens */ 
     }
+
 }

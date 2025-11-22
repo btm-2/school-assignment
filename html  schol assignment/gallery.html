@@ -3,70 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/gallery-text.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/picture.css">
+      <link rel="stylesheet" href="css/textstyle.css">
+       <link rel="stylesheet" href="css/menu.css"> 
+    <title>Gallery of Our Services</title>
 </head>
-<body class="bg-image">
-  <div>
   <header>
-    <nav class="nav ul" aria-label="Main navigation">
-      <ul>
-        <li><a href="home.html">home</a></li>
-        <li><a href="about-us.html">about us</a></li>
-        <li><a href="ceo.html">founder</a></li>
-      </ul>
-    </nav>
-  </header>
-  </div>
+  <nav class="nav">
+    <div class="burger" id="burger" aria-label="menu" role="button" tabindex="0">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
 
-  <main>
-    <h1>Gallery</h1>
-    <hr>
-    <p>
-      Should you have a few questions but don't want to make the trip down to our service stores, feel free to visit the FAQ page to see frequently asked questions and answers.
-    </p>
-          <p>Explore our gallery showcasing our expert car repair services and satisfied customers.</p>
-    
-      
+    <ul class="nav-links">
+      <li><a href="home.html">home</a></li>
+      <li><a href="about-us.html">about us</a></li>
+      <li><a href="ceo.html">founder</a></li>
+      <li><a href="contact-us.html">my contact</a></li>
+    </ul>
+  </nav>
+</header>    
+<body class="bg-black">
+  <h1 class="textstyle" >Gallery of how our services</h1>
     <div class="gallery">
-      <div class="gallery-item">
-        <a target="_blank" href="images/service-car1.jpg">
-          <img src="images/service-car1.jpg" alt="Service car 1" width="600" height="400">
-        </a>
-      </div>
-      <div class="gallery-item">
-        <a target="_blank" href="images/service-car2.jpg">
-          <img src="images/service-car2.jpg" alt="Service car 2" width="600" height="400">
-        </a>
-      </div>
-      <div class="gallery-item">
-        <a target="_blank" href="images/service-car3.jpg">
-          <img src="images/service-car3.jpg" alt="Service car 3" width="600" height="400">
-        </a>
-      </div>
-      <div class="gallery-item">
-        <a target="_blank" href="images/service-car4.webp">
-          <img src="images/service-car4.webp" alt="Service car 4" width="600" height="400">
-        </a>
-      </div>
-      <div class="gallery-item">
-        <a target="_blank" href="images/service-car5.jpg">
-          <img src="images/service-car5.jpg" alt="Service car 5" width="600" height="400">
-        </a>
-      </div>
-          <div class="gallery-description">
-      <div class="gallery-item">
-        <a target="_blank" href="images/we fix.png">
-          <img src="images/we fix.png" alt="We Fix" width="600" height="400">
-        </a>
-      </div>
-  </main>
-  <a href="/html  schol assignment/servicess.html" class="btn">next page</a>
-  <footer>
-    <p class="footer">&copy; 2025 We Fix. All rights reserved.</p>
-  </footer>
-
-  <script src="java/age.js"></script>
+        <img src="images/remove car part.avif" alt="Service 1" width="300" height="200">
+<img src="images/service-car1.jpg" alt="Service 2" width="300" height="200">
+        <img src="images/service-car2.jpg" alt="Service 3" width="300" height="200">
+        <img src="images/service-car3.jpg" alt="Service 4" width="300" height="200">
+        <img src="images/service-car4.webp" alt="Service 5" width="300" height="200">
+        <img src="images/service-car5.jpg" alt="Service 6" width="300" height="200">
+        <img src="images/touchig car.avif" alt="Service 7" width="300" height="200">
+        <img src="images/oil.jpg" alt="Service 8" width="300" height="200">
+        <img src="images/service 6.jpg" alt="Service 9" width="300" height="200">
+        <img src="images/hi.jpg" alt="Service 9" width="300" height="200">
+        <img src="images/jetta.jpg" alt="Service 10" width="300" height="200">
+        <img src="images/brakes.jpg" alt="Service 11" width="300" height="200">
+    </div>
+<div class="modal" id="modal">
+<span class="close-btn" id="closeBtn">&times;</span>
+<div style="text-align:center;">
+<img id="modalImg" src="" alt="Expanded Image" style="transform: scale(1); transition: transform 0.3s ease;" />
+</div>
+<script src="menu.js" defer></script>
+ <script src="gallery.js" defer></script>
+ <script src="javascript/performance.js" defer></script>
+   <a href="404 error.html"></a>
+</body>
+</div>
+    <a href="servicess.html"><button>next page </button></a>
 </body>
 </html>

@@ -1,0 +1,96 @@
+/* Burger Menu Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0,0,0,0.9);
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li { list-style: none; }
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  text-transform: capitalize;
+}
+.nav-links a:hover { color: #4CAF50; }
+
+/* Burger Icon */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 2000;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .burger { display: flex; }
+
+  .nav-links {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.95);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    transition: right 0.45s ease;
+    gap: 2rem;
+    z-index: 3000; /* ensure it sits above other content */
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  /* Start hidden, no animation by default */
+  .nav-links li {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  /* Animate only when panel becomes active */
+  .nav-links.active li {
+    animation: fadeIn 0.45s ease forwards;
+  }
+  .nav-links.active li:nth-child(1) { animation-delay: 0.08s; }
+  .nav-links.active li:nth-child(2) { animation-delay: 0.16s; }
+  .nav-links.active li:nth-child(3) { animation-delay: 0.24s; }
+  .nav-links.active li:nth-child(4) { animation-delay: 0.32s; }
+
+  /* Burger Animation (requires .line1/.line2/.line3 in HTML) */
+  .burger.active .line1 { transform: rotate(-45deg) translate(-5px, 6px); }
+  .burger.active .line2 { opacity: 0; transform: scaleX(0); }
+  .burger.active .line3 { transform: rotate(45deg) translate(-5px, -6px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(50px); }
+  to   { opacity: 1; transform: translateX(0); }
+}

@@ -8,19 +8,25 @@
     <link rel="stylesheet" href="css/textstyle.css">
     <link rel="stylesheet" href="css/picture.css">
     <link rel="stylesheet" href="css/formsss.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
-<body class="bg-image">
+<body class="bg-black">
+    <header>
+  <nav class="nav">
+    <div class="burger" id="burger" aria-label="menu" role="button" tabindex="0">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
 
- <header>
-    <nav class="main-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="home.html">home</a></li>
-        <li><a href="about-us.html">about us</a></li>
-        <li><a href="gallery.html">Service</a></li>
-        <li><a href="ceo.html">founder</a></li>
-      </ul>
-    </nav>
-  </header>
+    <ul class="nav-links">
+      <li><a href="home.html">home</a></li>
+      <li><a href="about-us.html">about us</a></li>
+      <li><a href="servicess.html">Service</a></li>
+      <li><a href="contact-us.html">my contact</a></li>
+    </ul>
+  </nav>
+</header>
   <img src="images/improvedlogo.png" 
   srcset="images/improvedlogo.png"
   sizes="(max-width: 600px) 100vw, 600px"
@@ -42,10 +48,12 @@
       <label for="message" class="textstyle">Message:</label><br>
       <textarea id="message" name="message" placeholder="Type your message here..." required></textarea><br><br>
 
-      <a href="/html  schol assignment/thank-you.html"><button type="submit" class="btn">Submit</button></a>
+      <button type="submit">Submit</button>
     </form>
   </main>
   </div>
+  <script src="menu.js" defer></script>
+    <a href="404 error.html"></a>
   <footer>
     <p class="textstyle">&copy; 2025 We Fix. All rights reserved.</p>
 </body>
